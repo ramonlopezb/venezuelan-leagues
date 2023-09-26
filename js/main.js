@@ -5,6 +5,8 @@ fetch(URL)
 .then(res=> res.json())
 .then(data => {
  
-   console.log(data);
+   var countries = data["countries"];
+   console.log(countries[1]["intFormedYear"]);
+   
 });
 console.log(fetch);
