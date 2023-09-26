@@ -1,12 +1,10 @@
-console.log('hola mundo');
-const theSportsDB = require('thesportsdb');
-(async() => {
-    theSportsDB.setApiKey(808) //defaults to 1, set for Patreon
-    //works with space, underscores, or "%20"s
-    var goat = await theSportsDB.getPlayerByName("michael jordan")
-    var kobe = await theSportsDB.getPlayerByName("kobe_bryant") 
-    //replace unused parameters with null
-    var events = await theSportsDB.getEventsOnDay("2014-10-10", null, "Australian_A-League")
-    //ids can be either numbers or strings
-    var nextEvents = await theSportsDB.getNext5EventsByTeamId(133602)
-})()
+
+const URL = 'https://www.thesportsdb.com/api/v1/json/3/search_all_leagues.php?c=Venezuela';
+
+fetch(URL)
+.then(res=> res.json())
+.then(data => {
+ 
+   console.log(data);
+});
+console.log(fetch);
