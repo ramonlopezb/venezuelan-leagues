@@ -10,8 +10,9 @@ async function ligaBeisbol(){
    var countries = data["countries"];
    const h1 = document.querySelector("h1");
    h1.innerHTML = countries[1]["strDescriptionEN"];
-   var img = document.getElementById("img1");
-   img = countries[1]["strFanart2"];
+   var img1 = document.getElementById("img1");
+   img1.innerHTML = countries[1]["strFanart2"];
+   
 }
 ligaBeisbol();
 
