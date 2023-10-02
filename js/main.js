@@ -30,7 +30,9 @@ async function equipos(){
    const p2 = document.getElementById("aguilas");
    p2.innerHTML = team[0]["strTeam"];
    const p3 = document.getElementById("aguilas1");
-   p3.innerHTML = team[0][  "strDescriptionEN"];
+   var descripcion_segundo_equipo =  team[0]["strDescriptionEN"];
+   descripcion_segundo_equipo = descripcion_segundo_equipo.substring(0, 30);
+   p3.innerHTML = descripcion_segundo_equipo;
    const p4 = document.getElementById("leones");
    p4.innerHTML = team[4]["strTeam"];
    const p5 = document.getElementById("leones1");
