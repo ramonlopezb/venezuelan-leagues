@@ -17,6 +17,8 @@ async function ligaBeisbol(){
    description_liga_beisbol = description_liga_beisbol.substring(0,210);
    p1.innerHTML=  description_liga_beisbol;
    console.log("description_liga_beisbol");
+   var img_icono_beisbol=document.getElementById("icono_beisbol");
+   img_icono_beisbol.src= countries[1]["strBadge"];
    var img1 = document.getElementById("img1");
    img1.src= countries[1]["strFanart2"];
    var img2 = document.getElementById("img2");
