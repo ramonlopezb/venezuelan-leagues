@@ -20,15 +20,15 @@ async function ligaBeisbol(){
    var img_icono_beisbol=document.getElementById("icono_beisbol");
    img_icono_beisbol.src= countries[1]["strBadge"];
    var img1 = document.getElementById("img1");
-   img1.src= countries[1]["strFanart2"];
+   img1.src= countries[1]["strFanart1"];
    var img2 = document.getElementById("img2");
    img2.src= countries[1]["strFanart4"];
-   var imgCarrusel  = document.getElementById("primer-elemento-carrusel");
+   /*var imgCarrusel  = document.getElementById("primer-elemento-carrusel");
    imgCarrusel.src = countries[1]["strBadge"];
    var imgCarrusel1  = document.getElementById("segundo-elemento-carrusel");
    imgCarrusel1.src = countries[1]["strPoster"];
    var imgCarrusel2  = document.getElementById("tercer-elemento-carrusel");
-   imgCarrusel2.src = countries[1]["strTrophy"];
+   imgCarrusel2.src = countries[1]["strTrophy"];*/
        
 }
 ligaBeisbol();
@@ -39,9 +39,9 @@ async function equipos(){
    console.log(data1);
    var team = data1["teams"];
    const p2 = document.getElementById("aguilas");
-   p2.innerHTML = team[0]["strTeam"];
+   p2.innerHTML = team[5]["strTeam"];
    const p3 = document.getElementById("aguilas1");
-   var description_primer_equipo = team[0]["strDescriptionEN"];
+   var description_primer_equipo = team[5]["strDescriptionEN"];
    description_primer_equipo = description_primer_equipo.substring(0,200);
    p3.innerHTML = description_primer_equipo;
    const p4 = document.getElementById("leones");
